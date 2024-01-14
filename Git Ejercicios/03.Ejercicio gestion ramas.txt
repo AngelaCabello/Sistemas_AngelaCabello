@@ -1,0 +1,247 @@
+1.
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios>cd libro-git
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git branch bibliografia
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git checkout
+
+2.
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>cd capitulos
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git\capitulos>echo capitulo4.txt
+capitulo4.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git\capitulos>echo " texto de gitttttttt" >> capitulo4.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git\capitulos>git add .
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git\capitulos>git commit -m "añadido capitulo 4."
+[master be42f75] añadido capitulo 4.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 capitulos/capitulo4.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git\capitulos>git log
+commit be42f7565d5b59a9ea6bda2ae77f208f178c7d8a (HEAD -> master)
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 18:12:06 2024 +0100
+
+    añadido capitulo 4.
+
+commit 71ac316b4798469743caae9de8e8ab01423da1e3 (bibliografia)
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:47:58 2024 +0100
+
+    añadido capitulo 5 al indice..
+
+commit e78153be4d949374d218b7c2e769268087070cea
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:31:37 2024 +0100
+
+    añadido capitulo 3.
+
+commit 08613c506ec7ae398f10e9b647f39c1e2dc66d8a
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:24:01 2024 +0100
+
+    añadido capitulo 2.
+
+commit 69f4b8ada368a0d1e95c65c32e4f7f1d2b691103
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:07:30 2024 +0100
+
+    añadido capitulo 1.
+
+commit 8c808102b96843781205b3169444a002878f5b21
+Author: Alfredo Sánchez Alberca <asalber@gmail.com>
+Date:   Wed Feb 13 18:05:27 2019 +0100
+:
+
+3.
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo bibliografia.txt
+bibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo ""chacon, s. and straub, b.pro git. apress >> bibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git add .
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git commit -m "añadida primera referencia bibliografica."
+[master 06966fa] añadida primera referencia bibliografica.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git log
+commit 06966fa1ab712055ee4b66c35e67ce39f2836ea5 (HEAD -> master)
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 18:21:22 2024 +0100
+
+    añadida primera referencia bibliografica.
+
+commit be42f7565d5b59a9ea6bda2ae77f208f178c7d8a
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 18:12:06 2024 +0100
+
+    añadido capitulo 4.
+
+commit 71ac316b4798469743caae9de8e8ab01423da1e3 (bibliografia)
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:47:58 2024 +0100
+
+    añadido capitulo 5 al indice..
+
+commit e78153be4d949374d218b7c2e769268087070cea
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:31:37 2024 +0100
+
+    añadido capitulo 3.
+
+commit 08613c506ec7ae398f10e9b647f39c1e2dc66d8a
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:24:01 2024 +0100
+
+    añadido capitulo 2.
+
+commit 69f4b8ada368a0d1e95c65c32e4f7f1d2b691103
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:07:30 2024 +0100
+:
+
+4.
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git merge bibliografia
+Already up to date.
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git branch
+  bibliografia
+* master
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git branch -d bibliografia
+
+Deleted branch bibliografia (was 71ac316).
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git branch
+* master
+
+5.
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git branch bibliografia
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git merge bibliografia
+Already up to date.
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "-Scott Chacon and Ben Straub. Pro Git Apress.  -Ryan Hodson. Ry´s Git Tutorial. Smashword(2014)"> blibliografia
+.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "-Scott Chacon and Ben Straub. Pro Git Apress."> blibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "-Ryan Hodson. Ry´s Git Tutorial. Smashword(2014)"">> blibliografia.txt
+"-Ryan Hodson. Ry´s Git Tutorial. Smashword(2014)"">> blibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git add .
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git commit -m "añadida nueva referencia bibliografica."
+[master 3c7f4f9] añadida nueva referencia bibliografica.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 blibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git merge master
+Already up to date.
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "-Chacon, S. and Straub, B. Pro Git. Apress."> blibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "-Loeliger, J. and McCullough, M. Version control with Git.">> blibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git add .
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git commit -m "añadida nueva referencia bibliografica"
+[master 34ae78e] añadida nueva referencia bibliografica
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git merge
+fatal: No remote for the current branch.
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "Chacon, S. and Straub, B. Pro Git. Apress."> bibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "Loeliger, J. and McCullough, M. Version control with Git.">> bibliografia.txt
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>echo "Hodson, R. Ry’s Git Tutorial. Smashwords (2014)">> bibliografia.txt
+
+Tutorial. Smashwords (2014)">> bibliografia.txtrcicios\libro-git>echo "Hodson, R. Ry’s Git
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git add .
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git commit -m "resuelto conflicto de bibliografica"
+[master 9b3ab68] resuelto conflicto de bibliografica
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\angca\Documents\DAM\1\Sistemas\Git\Ejercicios\libro-git>git log
+commit 9b3ab687eeadc6ce56f30dca0399762322ce25d0 (HEAD -> master)
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 19:57:32 2024 +0100
+
+    resuelto conflicto de bibliografica
+
+commit 34ae78ea34182457fa2921fd8fe5f666e4bd184b
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 19:50:20 2024 +0100
+
+    añadida nueva referencia bibliografica
+
+commit 3c7f4f954b1de5bade87c8b79795fb2d750a44c9
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 19:45:15 2024 +0100
+
+    añadida nueva referencia bibliografica.
+
+commit 06966fa1ab712055ee4b66c35e67ce39f2836ea5 (bibliografia)
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 18:21:22 2024 +0100
+
+    añadida primera referencia bibliografica.
+
+commit be42f7565d5b59a9ea6bda2ae77f208f178c7d8a
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 18:12:06 2024 +0100
+
+    añadido capitulo 4.
+
+commit 71ac316b4798469743caae9de8e8ab01423da1e3
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:47:58 2024 +0100
+
+    añadido capitulo 5 al indice..
+
+commit e78153be4d949374d218b7c2e769268087070cea
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:31:37 2024 +0100
+
+    añadido capitulo 3.
+
+commit 08613c506ec7ae398f10e9b647f39c1e2dc66d8a
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:24:01 2024 +0100
+
+    añadido capitulo 2.
+
+commit 69f4b8ada368a0d1e95c65c32e4f7f1d2b691103
+Author: Angela Cabello <angcabpin03@gmail.com>
+Date:   Sat Jan 13 17:07:30 2024 +0100
+
+    añadido capitulo 1.
+
+commit 8c808102b96843781205b3169444a002878f5b21
+Author: Alfredo Sánchez Alberca <asalber@gmail.com>
+Date:   Wed Feb 13 18:05:27 2019 +0100
+
+    Añadido capítulo 3 sobre gestión de ramas al índice.
+
+commit bd7f788903cf1b1adbde028d474068cebb6ac870
+Author: Alfredo Sánchez Alberca <asalber@gmail.com>
+Date:   Wed Feb 13 17:58:58 2019 +0100
+
+    Añadido índice del libro.
+(END)
+
